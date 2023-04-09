@@ -1,0 +1,14 @@
+<div class="border border-2 border-primary m-3 p-3">
+    <p class="ps-1">{{userPrompt}}</p>
+    <input type="text" class="form-control w-50" [(ngModel)]="userInput">
+    <button (click)="isOddOrEven()" class="btn btn-primary mt-3">{{btnText}}</button>
+
+    <div class="row">
+        <div class="col">
+            <app-even-length-words [words]="evenWords"></app-even-length-words>
+        </div>
+        <div class="col">
+            <app-odd-length-words [words]="oddWords"></app-odd-length-words>
+        </div>
+    </div>
+</div>
